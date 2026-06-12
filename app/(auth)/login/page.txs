@@ -1,0 +1,17 @@
+// beatzvids/app/(auth)/login/page.tsx
+
+import AuthCard from "@/components/AuthCard"; // Adjust this import path based on your project structure
+
+export default function LoginPage() {
+  return (
+    <AuthCard
+      title="Welcome back"
+      subtitle="Sign in to your BeatzVid account"
+    >
+      {/* ...rest of form unchanged... */}
+      <form>
+        {/* Your form inputs (email, password, etc.) go here */}
+      </form>
+    </AuthCard>
+  );
+}
