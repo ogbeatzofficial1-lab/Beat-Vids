@@ -19,9 +19,7 @@ const nextConfig: NextConfig = {
   },
 
   // Silence known harmless warnings from Supabase SSR
-  experimental: {
-    serverComponentsExternalPackages: ["@supabase/ssr"],
-  },
+  serverExternalPackages: ["@supabase/ssr"],
 
   // Security headers
   async headers() {
