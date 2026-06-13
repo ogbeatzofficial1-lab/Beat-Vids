@@ -84,7 +84,7 @@ export default function SettingsPage() {
       .update({
         display_name: displayName.trim() || null,
         username:     username.trim()    || null,
-      })
+      } as never)
       .eq("id", profile.id);
 
     setSavingProfile(false);
